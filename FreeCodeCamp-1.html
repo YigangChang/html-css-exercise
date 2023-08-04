@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Form Practice </title>
+  <link rel="stylesheet" href="FreeCodeCamp-1.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1 id="title">MBIT Survey Form</h1>
+      <p id="description">Thank you for helping us do the research!</p>
+    </header>
+
+
+    <form class="form" action="/This PC/OS(C:)/Users/c690/mbti_database.txt">
+      <div>
+        <label id="name-label" for="name">Name:</label>
+        <input type="text" id="name" required>
+      </div>
+      <div>
+        <label id="email-label" for="email">Email:</label>
+        <input type="email" id="email" required>
+      </div>
+      <div>
+        <label id="number-label" for="number">Age:</label>
+        <input type="number" id="number" max="100" min="20">
+      </div>
+
+      <div>
+        <label id="ccupation" for="occupation">Please choose your occupation:</label>
+        <select name="occupation" id="breakdown" for="occupation">
+          <option value="">Please choose one:</option>
+          <option value="student">Student</option>
+          <option value="admin">Admin</option>
+          <option value="engineer">Engineer</option>
+          <option value="civil servant">Civil Servant</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="mbti-section">
+        <div>
+          <input type="radio" name="mbit" id="estj" value="estj" checked>
+          <label for="estj">ESTJ</label>
+        </div>
+        <div>
+          <input type="radio" name="mbit" id="estp" value="estp">
+          <label for="estp">ESTP</label>
+        </div>
+        <div>
+          <input type="radio" name="mbit" id="esfj" value="esfj">
+          <label for="esfj">ESFJ</label>
+        </div>
+        <div>
+          <input type="radio" name="mbit" id="entj" value="entj">
+          <label for="entj">ENTJ</label>
+        </div>
+        <div>
+          <input type="radio" name="mbit" id="istj" value="istj">
+          <label for="istj">ISTJ</label>
+        </div>
+      </div>
+      <label for="story">Tell us about yourself:</label>
+      <textarea name="story" id="story" cols="30" rows="10">I am...</textarea>
+
+      <button id="submit">Submit</button>
+    </form>
+  </div>
+</body>
+
+</html>

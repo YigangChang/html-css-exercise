@@ -1,0 +1,27 @@
+body {
+  font-family: Arial;
+  color: black;
+  background-color: #1d3557;
+
+
+}
+
+
+
+.container {
+  margin: 0 auto;
+  background-color: #a8dadc;
+  width: 500px;
+  margin: 50px auto;
+  padding: 60px;
+
+
+}
+
+label {
+  display: block;
+}
+
+.mbti-section {
+  display: flex;
+}
